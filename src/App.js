@@ -1,17 +1,19 @@
-import { Box, Button } from '@mui/material';
-import * as React from 'react';
-import CardComp from './Components/CardComp';
+import './App.css';
+import { Grid } from '@mui/material';
+import LeftbarComp from './components/LeftbarComp';
+import RightCard from './components/RightCard';
 
 function App() {
-
   return (
-    <Box m={2}>
-      <Button />
-      <CardComp />
+    <Grid container spacing={2}>
+      <Grid item xs={2} sx={{ bgcolor: '#f2f2f2' }}>
+        <LeftbarComp />
+      </Grid>
+      <Grid item xs={10}>
+        <RightCard />
+      </Grid>
 
-
-
-    </Box>
+    </Grid>
   );
 }
 
